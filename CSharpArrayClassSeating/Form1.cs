@@ -21,7 +21,7 @@ namespace CSharpArrayClassSeating
         {
 
             string[] names = { "Arthur", "Daniel", "Jane", "Darren", "Ethan", "Jeff", "Judah", "Kyle", "Sonya", "Josh", "Keum" };
-
+            Array.Sort(names);
             //using a For loop as we need the ccounter i
             for (var i = 0; i < names.Length; i++)
             { //get the name at that counter
@@ -30,7 +30,6 @@ namespace CSharpArrayClassSeating
                 //get the label at that number label1.text and then pass over the name
                 this.Controls["label" + i.ToString()].Text = name;
 
-                //  this.Controls["label" + i.ToString()].Width = name;
 
             }
 
