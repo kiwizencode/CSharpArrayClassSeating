@@ -29,6 +29,20 @@ namespace CSharpArrayClassSeating
 
                 //get the label at that number label1.text and then pass over the name
                 this.Controls["label" + i.ToString()].Text = name;
+
+                //  this.Controls["label" + i.ToString()].Width = name;
+
+            }
+
+            foreach (Control c in this.Controls)
+            {
+                if (c is Label)
+                {
+                    c.BackColor = Color.LightSteelBlue;
+                    c.AutoSize = false;
+                    c.Width = 70;
+                    c.Height = 50;
+                }
             }
         }
     }
